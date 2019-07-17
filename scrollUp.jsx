@@ -79,6 +79,7 @@ export default class ScrollUp extends React.Component {
         this.data.startTime = null;
         this.data.rafId = window.requestAnimationFrame(this.scrollStep);
         const { onClick } = this.props
+        console.log('onClick:', onClick)
         typeof onClick === 'function' && onClick()
     }
 

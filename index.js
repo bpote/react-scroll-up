@@ -122,6 +122,7 @@ var ScrollUp = function (_React$Component) {
             this.data.rafId = window.requestAnimationFrame(this.scrollStep);
             var onClick = this.props.onClick;
 
+            console.log('onClick:', onClick);
             typeof onClick === 'function' && onClick();
         }
 
