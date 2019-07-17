@@ -120,6 +120,9 @@ var ScrollUp = function (_React$Component) {
             this.data.currentTime = 0;
             this.data.startTime = null;
             this.data.rafId = window.requestAnimationFrame(this.scrollStep);
+            var onClick = this.props.onClick;
+
+            typeof onClick === 'function' && onClick();
         }
 
         /**
